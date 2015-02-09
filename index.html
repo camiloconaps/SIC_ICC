@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>getElementById example</title>
+  <script>
+  function changeColor(newColor) {
+    
+    
+    
+	var user = document.getElementById("para1").value;
+	var elem = document.getElementById("para1");
+	
+	if (user != ''){
+		elem.style.color = newColor;
+		newwindow=window.open('chat.php?user='+user+'&res=0','name','height=400,width=350');
+		if (window.focus) {newwindow.focus()}
+		return false;
+	}else{
+		alert('Ingrese nombre de usuario');
+	}
+  }
+  </script>
+</head>
+<body>
+  <input type="text" value="param1" id="para1"/>
+  <button onclick="changeColor('green');">Link Chat</button>
+  </body>
+</html>
