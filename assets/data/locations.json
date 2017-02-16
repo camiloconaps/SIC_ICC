@@ -1,0 +1,8 @@
+{
+	"SO":["iOS","Android","BB10","Windows Phone"],
+	"plataforma": "Phonegap",
+	"tecnologia": "html5",
+	"modelo": "html",
+	"view": "css",
+	"controller": "javascript"
+}
