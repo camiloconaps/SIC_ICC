@@ -8,9 +8,14 @@
 <link rel="stylesheet" type="text/css" href="libs/jquery.mobile-1.2.0/jquery.mobile-1.2.0.css">
 <link href="assets/css/estilo.css" rel="stylesheet" type="text/css">
 <script type="text/javascript" src="libs/jquery.mobile-1.2.0/jquery.js"></script>
-
-
 <script type="text/javascript" src="libs/jquery.mobile-1.2.0/jquery.mobile-1.2.0.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+        $("#show").load('index.html');
+});
+
+</script>
+
 </head>
 <body>
 <div data-role="page" data-theme="b">
@@ -59,6 +64,8 @@
     <div data-role="content">
 		Actualización de noticias acerca de los medios de atención 
 	     <a href="http://www.sic.gov.co/servicios-de-informacion-al-ciudadano">Contenido</a>
+	     <div id="show"></div>
+
 	</div> 
      <div data-role="footer" align="center" class="footer">
   <!--  &nbsp; -->
